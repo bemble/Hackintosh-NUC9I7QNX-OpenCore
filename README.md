@@ -42,6 +42,7 @@
 * [x] Wifi
 * [x] Bluetooth
 * [x] USB C ports
+* [x] Airpods Pro (battery level/noise reduction mode switch)
 
 ## Software
 
