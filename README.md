@@ -59,6 +59,7 @@
 * Could not add MX Master 1 mouse at all
 
 ## Not tested Hardware
+* Audio \(Microphone\)
 * HDMI/DP audio
 * Video encoder/decoder hardware
 * Multiple displays
