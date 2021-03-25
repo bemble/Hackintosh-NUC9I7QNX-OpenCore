@@ -76,7 +76,8 @@
 ## OS Version Tested
 - macOS Big Sur 11.2.3 (20D91)
 
-## Ressources
+## Resources
+- [PcPerspective - Nuc9 Chipset](https://pcper.com/2020/04/intel-nuc-9-extreme-nuc9i9qnx-review/#ftoc-heading-19)
 - [OpenCore Guide - config.plist](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#starting-point) 
 - [OpenCore Guide - Generate SMBios](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo)
 - [OpenCore Guide - HDD boot](https://dortania.github.io/OpenCore-Post-Install/universal/oc2hdd.html#grabbing-opencore-off-the-usb)
