@@ -49,7 +49,7 @@
 * [x] Installer, App Store, App updates
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
-* [x] Handoff, Continuity, Universal Clipboard
+* [ ] Handoff, Continuity, Universal Clipboard
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
 
