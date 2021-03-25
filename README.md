@@ -46,6 +46,11 @@
 
 * [x] Installer, App Store, App updates
 * [x] APFS, SSD TRIM
+* [x] iMessage, iCloud, Siri, iTunes, other services
+* [ ] Handoff, Continuity, Universal Clipboard (Wifi required)
+* [x] Airpods Pro
+* [x] Metal, GPU accelerated applications
+* [x] Time Machine
 
 ## Errors and other
 
@@ -63,10 +68,7 @@
 * Secure Boot \(with High Security\)
 
 ## Not tested  Software
-* iMessage, iCloud, Siri, iTunes, other services
-* FileVault2, Time Machine
-* Metal, GPU accelerated applications, hardware video encoder/decoder
-* Handoff, Continuity, Universal Clipboard
+* FileVault2
 * SIP, Gate Keeper, all OSX security features
 * Schedule Start up or Wake, Sleep
 * Update macOS directly from Apple
