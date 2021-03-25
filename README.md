@@ -50,7 +50,6 @@
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
 * [x] Handoff, Continuity, Universal Clipboard
-* [x] Airpods Pro
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
 
