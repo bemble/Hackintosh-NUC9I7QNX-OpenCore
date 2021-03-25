@@ -39,15 +39,16 @@
 * [x] USB A ports
 * [x] SD card slot
 * [x] NVMe SSD
-* [ ] Wifi
-* [x] Bluetooth \(Audio\)
+* [x] Wifi
+* [x] Bluetooth
+* [x] USB C ports
 
 ## Software
 
 * [x] Installer, App Store, App updates
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
-* [ ] Handoff, Continuity, Universal Clipboard (Wifi required)
+* [x] Handoff, Continuity, Universal Clipboard
 * [x] Airpods Pro
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
@@ -61,7 +62,6 @@
 * HDMI/DP audio
 * Video encoder/decoder hardware
 * Multiple displays
-* USB C ports
 * Thunderbolt 3 port
 * CPU power management
 * Shutdown/Sleep/Wake
@@ -81,6 +81,20 @@
 - [OpenCore Guide - Generate SMBios](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo)
 - [OpenCore Guide - HDD boot](https://dortania.github.io/OpenCore-Post-Install/universal/oc2hdd.html#grabbing-opencore-off-the-usb)
 - [OpenCore Guide - Debug Mode](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html)
+- [OpenCore Sanity Checker](https://opencore.slowgeek.com)
 - [MountEFI tool](https://github.com/corpnewt/MountEFI)
 - [GenSMBIOS tool](https://github.com/corpnewt/GenSMBIOS)
 - [ProperTree tool](https://github.com/corpnewt/ProperTree)
+
+## Kexts
+- [Lilu v1.5.1](https://github.com/acidanthera/Lilu/releases/tag/1.5.1)
+- [VirtualSMC v1.2.1](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.1)
+- [WhateverGreen v1.4.8](https://github.com/acidanthera/WhateverGreen/releases/tag/1.4.8)
+- [AppleALC v1.5.8](https://github.com/acidanthera/AppleALC/releases/tag/1.5.8)
+- NVMe [NVMeFix v1.0.5](https://github.com/acidanthera/NVMeFix/releases/tag/1.0.5)
+- LAN [IntelMausi v1.0.5](https://github.com/acidanthera/IntelMausi/releases/tag/1.0.5)
+- LAN i211 [SmallTreeIntel82576 v1.2.5](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases/tag/1.2.5)
+- Bluetooth [IntelBluetoothFirmware v1.1.2](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/1.1.2)
+- Wifi [AirportItlwm v1.2.0](https://github.com/OpenIntelWireless/itlwm/releases/tag/v1.2.0)
+- USB [USBInjectAll v2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads)
+
