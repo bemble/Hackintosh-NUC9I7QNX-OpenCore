@@ -39,8 +39,8 @@
 * [x] USB A ports
 * [x] SD card slot
 * [x] NVMe SSD
-* [x] Wifi
-* [x] Bluetooth
+* [x] Wifi :zap:
+* [x] Bluetooth :zap:
 * [x] USB C ports
 * [x] Airpods Pro (battery level/noise reduction mode switch)
 
@@ -53,8 +53,9 @@
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
 
-## Errors and other
+## :zap: Errors and other
 
+* Wifi networks are listed but I could not manage to connect (both 5Ghz and 2.4Ghz)
 * Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
 * Could not add MX Master 1 mouse at all
 
