@@ -52,12 +52,12 @@
 * [ ] Handoff, Continuity, Universal Clipboard
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
+* [x] Sleep mode
 
 ## :zap: Errors and other
 
-* Wifi networks are listed but I could not manage to connect (both 5Ghz and 2.4Ghz)
 * Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
-* Could not add MX Master 1 mouse at all
+* Could not add MX Master using Bluetooth
 
 ## Not tested Hardware
 * Audio \(Microphone\)
@@ -72,7 +72,7 @@
 ## Not tested  Software
 * FileVault2
 * SIP, Gate Keeper, all OSX security features
-* Schedule Start up or Wake, Sleep
+* Schedule Start up or Wake
 * Update macOS directly from Apple
 
 ## OS Version Tested
