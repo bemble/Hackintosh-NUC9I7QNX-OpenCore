@@ -1,5 +1,9 @@
 # Hackintosh NUC9I7QNX OpenCore
 
+> I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I cannot buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can. 
+
+![About](about.png)
+
 ## System Specification
 - Processor: Intel® Core™ i7-9750H Processor (6 cores, 12 MB Cache, 2.6 GHz to 4.50 GHz)
 - Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
