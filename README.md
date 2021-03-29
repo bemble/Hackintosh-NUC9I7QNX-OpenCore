@@ -1,6 +1,6 @@
 # Hackintosh NUC9I7QNX OpenCore
 
-> I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I cannot buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can. 
+> I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I wont buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can. 
 
 ![About](about.png)
 
