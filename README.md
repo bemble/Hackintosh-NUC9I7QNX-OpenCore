@@ -62,6 +62,9 @@
 
 * Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
 * Could not add MX Master using Bluetooth
+* Wifi is quiet slow (Speedtest below, on a MacBook Pro results over wifi are close to ethernet):
+Wifi: ![Speedtest over Wifi](speedtest-wifi.png) / Ethernet: ![Speedtest over Ethernet](speedtest-ethernet.png)
+
 
 ## Not tested Hardware
 * Audio \(Microphone\)
