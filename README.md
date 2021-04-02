@@ -26,8 +26,6 @@
   - Security Features > `Intel Platform Trust Technology: Unchecked`
   - Security Features > `Intel Software Guard Extension (SGX): Disabled`
   - Security Features > `Thunderbold Security Level: Legacy mode`
-- Power
-  - Secondary Power Settings > `Wake On Lan from S4/S5: Stay off`
 - Boot
   - Secure Boot > `Secure Boot: Disabled`
   - boot Priority > `Fast Boot: Unchecked`
@@ -39,7 +37,8 @@
 
 * [x] GPU acceleration
 * [x] Ethernet
-* [ ] Audio \(Headphone\)
+* [x] Audio (Front Panel Headphone)
+* [ ] Audio (Rear Panel Headphone)
 * [x] USB A ports
 * [x] SD card slot
 * [x] NVMe SSD
@@ -47,6 +46,7 @@
 * [x] Bluetooth :zap:
 * [x] USB C ports
 * [x] Airpods Pro (battery level/noise reduction mode switch)
+* [x] CPU power management (tested using Intel Power Gadget)
 
 ## Software
 
@@ -57,6 +57,10 @@
 * [x] Metal, GPU accelerated applications
 * [x] Time Machine
 * [x] Sleep mode
+* [x] Shutdown/Sleep/Wake
+* [x] Schedule Start up or Wake
+* [X] Remote session
+* [ ] Wake On Remote Session
 
 ## :zap: Errors and other
 
@@ -67,19 +71,16 @@
 
 
 ## Not tested Hardware
-* Audio \(Microphone\)
+* Audio (Microphone, Toslink)
 * HDMI/DP audio
 * Video encoder/decoder hardware
 * Multiple displays
 * Thunderbolt 3 port
-* CPU power management
-* Shutdown/Sleep/Wake
-* Secure Boot \(with High Security\)
+* Secure Boot (with High Security)
 
 ## Not tested  Software
 * FileVault2
 * SIP, Gate Keeper, all OSX security features
-* Schedule Start up or Wake
 * Update macOS directly from Apple
 
 ## OS Version Tested
