@@ -66,9 +66,9 @@
 
 * Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
 * Could not add MX Master using Bluetooth
-* Built-in wifi connect on 5Ghz network but does not uses ac protocol:
+* Built-in wifi connect on 5Ghz network but does not uses ac protocol:  
   ![Wifi](wifi.png)
-* Speedtest:
+* Speedtest:  
   ![Speedtest](speedtest.jpg)
 
 
