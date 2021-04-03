@@ -59,14 +59,16 @@
 * [x] Sleep mode
 * [x] Shutdown/Sleep/Wake
 * [x] Schedule Start up or Wake
-* [X] Remote session
-* [ ] Wake On Remote Session
+* [X] Screenshare (VNC)
+* [ ] Wake On Screenshare
 
 ## :zap: Errors and other
 
 * Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
 * Could not add MX Master using Bluetooth
-* Wifi is quiet slow (Speedtest below, on a MacBook Pro results over wifi are close to ethernet):
+* Built-in wifi connect on 5Ghz network but does not uses ac protocol:
+![Wifi](wifi.png)
+* Speedtest:
 ![Speedtest](speedtest.jpg)
 
 
