@@ -9,7 +9,8 @@
 - Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
 - Graphics: Intel UHD Graphics 630 2048 MB
 - Hard Disk: NVMe Samsung EVO 970 500 GB 
-- Wifi/BT: Built-in OEM
+- Wifi/BT: Built-in `Intel AX200`
+- Audio: Built-in `Realtek ALC256`
 
 ## OpenCore
 - Version: [0.6.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.7)
@@ -38,7 +39,7 @@
 * [x] GPU acceleration
 * [x] Ethernet
 * [x] Audio (Front Panel Headphone)
-* [ ] Audio (Rear Panel Headphone)
+* [x] Audio (Rear Panel Headphone)
 * [x] USB A ports
 * [x] SD card slot
 * [x] NVMe SSD
