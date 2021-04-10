@@ -7,8 +7,9 @@
 ## System Specification
 - Processor: Intel® Core™ i7-9750H Processor (6 cores, 12 MB Cache, 2.6 GHz to 4.50 GHz)
 - Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
-- Graphics: Intel UHD Graphics 630 2048 MB
-- Hard Disk: NVMe Samsung EVO 970 500 GB 
+- Graphics: Sapphire Pulse `RX 570` 4GB ITX + Built-in Intel `UHD Graphics 630` 2048 MB
+- Main Hard Disk: NVMe Samsung EVO 970 500 GB
+- Secondary Hard Disk: M.2 Sata Sandisk 500GB 
 - Wifi/BT: Built-in `Intel AX200`
 - Audio: Built-in `Realtek ALC256`
 
@@ -36,7 +37,8 @@
 
 ## Hardware
 
-* [x] GPU acceleration
+* [x] GPU acceleration: built-in `Intel UHD 630` 
+* [x] GPU acceleration: `RX 570` (out of the box)
 * [x] Ethernet
 * [x] Audio (Front Panel Headphone)
 * [x] Audio (Rear Panel Headphone)
@@ -55,7 +57,8 @@
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
 * [ ] Handoff, Continuity, Universal Clipboard
-* [x] Metal, GPU accelerated applications
+* [x] Metal, GPU accelerated applications: built-in `Intel UHD 630`
+* [x] Metal, GPU accelerated applications: `RX 570`
 * [x] Time Machine
 * [x] Sleep mode
 * [x] Shutdown/Sleep/Wake
@@ -105,7 +108,7 @@
 - Bluetooth: [IntelBluetoothFirmware v1.1.2](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/1.1.2)
 - Built-in Wifi: [AirportItlwm v1.2.0](https://github.com/OpenIntelWireless/itlwm/releases/tag/v1.2.0)
 - USB: [USBInjectAll v2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads)
-- NVMe [NVMeFix v1.0.5](https://github.com/acidanthera/NVMeFix/releases/tag/1.0.5)
+- NVMe: [NVMeFix v1.0.5](https://github.com/acidanthera/NVMeFix/releases/tag/1.0.5)
 
 ## Resources
 - [OpenCore Sanity Checker](https://opencore.slowgeek.com)
