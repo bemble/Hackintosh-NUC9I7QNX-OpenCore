@@ -96,12 +96,13 @@
 - [MountEFI tool](https://github.com/corpnewt/MountEFI)
 - [GenSMBIOS tool](https://github.com/corpnewt/GenSMBIOS)
 - [ProperTree tool](https://github.com/corpnewt/ProperTree)
-- [OCConfigCompare](https://github.com/corpnewt/OCConfigCompare.git)
+- [OCConfigCompare](https://github.com/corpnewt/OCConfigCompare)
+- [gfxutil](https://github.com/acidanthera/gfxutil)
 
 ## Kexts
-- [Lilu v1.5.1](https://github.com/acidanthera/Lilu/releases/tag/1.5.1)
-- [VirtualSMC v1.2.1](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.1)
-- [WhateverGreen v1.4.8](https://github.com/acidanthera/WhateverGreen/releases/tag/1.4.8)
+- [Lilu v1.5.2](https://github.com/acidanthera/Lilu/releases/tag/1.5.2)
+- [VirtualSMC v1.2.2](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.2)
+- [WhateverGreen v1.4.9](https://github.com/acidanthera/WhateverGreen/releases/tag/1.4.9)
 - Audio: [AppleALC v1.5.8](https://github.com/acidanthera/AppleALC/releases/tag/1.5.8)
 - LAN: [IntelMausi v1.0.5](https://github.com/acidanthera/IntelMausi/releases/tag/1.0.5)
 - LAN i211: [SmallTreeIntel82576 v1.2.5](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases/tag/1.2.5)
