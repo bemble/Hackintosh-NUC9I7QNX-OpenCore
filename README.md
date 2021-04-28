@@ -23,7 +23,7 @@
 
 ### Configuration
 - Advanced
-  - USB > `Legacy USB Support: Unchecked`
+  - USB > `Legacy USB Support: Enabled`
 - Security
   - Security Features > `Intel Platform Trust Technology: Unchecked`
   - Security Features > `Intel Software Guard Extension (SGX): Disabled`
