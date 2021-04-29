@@ -54,6 +54,7 @@
 ## Software
 
 * [x] Installer, App Store, App updates
+* [x] Update MacOS directly from Apple
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
 * [ ] Handoff, Continuity, Universal Clipboard
@@ -75,6 +76,12 @@
 * Speedtest:  
   ![Speedtest](speedtest.jpg)
 
+## :zap: MacOS Big Sur 11.3
+
+* No USB after update, to fix it:
+  * Enable `config.plist` > `Kernel` > `Add` > `USBInjectAll` kext
+  * Disable `config.plist` > `Kernel` > `Add` > `USBMap` kext
+  * Disable `config.plist` > `Kernel` > `Quirks` > `XhciPortLimit`
 
 ## Not tested Hardware
 * Audio (Microphone, Toslink)
@@ -87,15 +94,16 @@
 ## Not tested  Software
 * FileVault2
 * SIP, Gate Keeper, all OSX security features
-* Update macOS directly from Apple
 
 ## OS Version Tested
-- macOS Big Sur 11.2.3 (20D91)
+- `[update]` MacOS Big Sur 11.3 (20E232)
+- `[install]` MacOS Big Sur 11.2.3 (20D91)
 
 ## Tools
 - [MountEFI tool](https://github.com/corpnewt/MountEFI)
 - [GenSMBIOS tool](https://github.com/corpnewt/GenSMBIOS)
 - [ProperTree tool](https://github.com/corpnewt/ProperTree)
+- [USBMap tool](https://github.com/corpnewt/USBMap)
 - [OCConfigCompare](https://github.com/corpnewt/OCConfigCompare)
 - [gfxutil](https://github.com/acidanthera/gfxutil)
 
