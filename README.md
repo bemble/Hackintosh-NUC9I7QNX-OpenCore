@@ -121,6 +121,7 @@
 
 ## Resources
 - [OpenCore Sanity Checker](https://opencore.slowgeek.com)
+- [Hac Mini Guide](https://osy.gitbook.io/hac-mini-guide/)
 - [PcPerspective - Nuc9 Chipset](https://pcper.com/2020/04/intel-nuc-9-extreme-nuc9i9qnx-review/#ftoc-heading-19)
 - [OpenCore Guide - config.plist](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#starting-point) 
 - [OpenCore Guide - Generate SMBios](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo)
