@@ -96,6 +96,7 @@
 * SIP, Gate Keeper, all OSX security features
 
 ## OS Version Tested
+- `[update]` MacOS Big Sur 11.4 (20F71)
 - `[update]` MacOS Big Sur 11.3 (20E232)
 - `[install]` MacOS Big Sur 11.2.3 (20D91)
 
