@@ -10,7 +10,7 @@
 - Graphics: Sapphire Pulse `RX 570` 4GB ITX + Built-in Intel `UHD Graphics 630` 2048 MB
 - Main Hard Disk: NVMe Samsung EVO 970 500 GB
 - Secondary Hard Disk: M.2 Sata Sandisk 500GB 
-- Wifi/BT: Built-in `Intel AX200`
+- Wifi/BT: Broadcom `BCM94360CS2` :wrench: + Built-in `Intel AX200`
 - Audio: Built-in `Realtek ALC256`
 
 ## OpenCore
@@ -57,15 +57,34 @@
 * [x] Update MacOS directly from Apple
 * [x] APFS, SSD TRIM
 * [x] iMessage, iCloud, Siri, iTunes, other services
-* [ ] Handoff, Continuity, Universal Clipboard
-* [x] Metal, GPU accelerated applications: built-in `Intel UHD 630`
-* [x] Metal, GPU accelerated applications: `RX 570`
+* [ ] Handoff, Continuity, Universal Clipboard: **built-in `Intel AX200`**
+* [x] Handoff, Continuity, Universal Clipboard: **Broadcom `BCM94360CS2`**
+* [x] Metal, GPU accelerated applications: **built-in `Intel UHD 630`**
+* [x] Metal, GPU accelerated applications: **Sapphire Pulse `RX 570`**
 * [x] Time Machine
 * [x] Sleep mode
 * [x] Shutdown/Sleep/Wake
 * [x] Schedule Start up or Wake
 * [X] Screenshare (VNC)
 * [ ] Wake On Screenshare
+
+## :wrench: Add Broadcom `BCM94360CS2` wifi card
+
+The idea was to plug the wifi card on a M.2 slot and use built-in wifi card antenna with the new one.
+Hardware problem for the antenna: built-in cables are MMCX male and `BCM94360CS2` are MHF4 female, so the final solution is: `MHF4 female -> SMA female -> SMA male -> MMCX female`. Definitly, `SM male -> MMCX female` converter was the hardest to find.
+
+### Hardware needed
+
+- Broadcom `BCM94360CS2` wifi card
+- [`BCM94360CS2` to M.2 Key-M adapter](https://www.amazon.fr/gp/product/B09B249QDL/ref=ppx_yo_dt_b_asin_title_o03_s00)
+- [`MHF4 female -> SMA female` cable](https://www.amazon.fr/Femelle-Bulkhead-Mhf4-Mini-dantenne-Extension/dp/B07GGYJ549/ref=sr_1_11)
+- [`SMA male -> MMCX female` converter, discontinuited](https://www.conrad.fr/p/tru-components-1579582-adaptateur-sma-sma-male-mmcx-femelle-1-pcs-1579582)
+
+### Bios setting
+
+To prevent any trouble, you should disable built-in wifi: 
+* Advanced
+  * Onboard Devices > `WLAN: uncheck`
 
 ## :zap: Errors and other
 
