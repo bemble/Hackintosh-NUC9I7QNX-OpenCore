@@ -138,13 +138,13 @@ To prevent any trouble, you should disable built-in wifi:
 ## Kexts
 
 - [Lilu v1.5.7](https://github.com/acidanthera/Lilu/releases/tag/1.5.7)
-- [VirtualSMC v1.2.7](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.7)
-- [WhateverGreen v1.5.5](https://github.com/acidanthera/WhateverGreen/releases/tag/1.5.5)
-- Audio: [AppleALC v1.6.6](https://github.com/acidanthera/AppleALC/releases/tag/1.6.6)
+- [VirtualSMC v1.2.8](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.8)
+- [WhateverGreen v1.5.6](https://github.com/acidanthera/WhateverGreen/releases/tag/1.5.6)
+- Audio: [AppleALC v1.6.8](https://github.com/acidanthera/AppleALC/releases/tag/1.6.8)
 - LAN: [IntelMausi v1.0.7](https://github.com/acidanthera/IntelMausi/releases/tag/1.0.7)
 - LAN i211: [SmallTreeIntel82576 v1.3.0](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases/tag/1.3.0)
-- Bluetooth: [IntelBluetoothFirmware v2.0.1](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/2.0.1)
-- Built-in Wifi: [AirportItlwm v2.0.0](https://github.com/OpenIntelWireless/itlwm/releases/tag/v2.0.0)
+- Bluetooth: [IntelBluetoothFirmware v2.1.0](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/v2.1.0)
+- Built-in Wifi: [AirportItlwm v2.1.0](https://github.com/OpenIntelWireless/itlwm/releases/tag/v2.1.0)
 - USB: [USBInjectAll v2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads)
 - NVMe: [NVMeFix v1.0.9](https://github.com/acidanthera/NVMeFix/releases/tag/1.0.9)
 
