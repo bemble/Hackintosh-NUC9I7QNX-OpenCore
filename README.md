@@ -1,27 +1,31 @@
 # Hackintosh NUC9I7QNX OpenCore
 
-> I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I wont buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can. 
+> I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I wont buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can.
 
 ![About](about.png)
 
 ## System Specification
+
 - Processor: Intel® Core™ i7-9750H Processor (6 cores, 12 MB Cache, 2.6 GHz to 4.50 GHz)
 - Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
 - Graphics: Sapphire Pulse `RX 570` 4GB ITX + Built-in Intel `UHD Graphics 630` 2048 MB
 - Main Hard Disk: NVMe Samsung EVO 970 500 GB
-- Secondary Hard Disk: M.2 Sata Sandisk 500GB 
+- Secondary Hard Disk: M.2 Sata Sandisk 500GB
 - Wifi/BT: Broadcom `BCM94360CS2` :wrench: + Built-in `Intel AX200`
 - Audio: Built-in `Realtek ALC256`
 
 ## OpenCore
+
 - Version: [0.6.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.8)
 - Generate SMBios using `Macmini8,1` type and add to `config.plist > PlatformInfo > Generic`
 
 ## Bios Settings
+
 - BIOS Version: `QXCFL579`
 - First, restore default BIOS config: `F9 - Optimal Defaults`
 
 ### Configuration
+
 - Advanced
   - USB > `Legacy USB Support: Enabled`
 - Security
@@ -37,89 +41,93 @@
 
 ## Hardware
 
-* [x] GPU acceleration: built-in `Intel UHD 630` 
-* [x] GPU acceleration: `RX 570` (out of the box)
-* [x] Ethernet
-* [x] Audio (Front Panel Headphone)
-* [x] Audio (Rear Panel Headphone)
-* [x] USB A ports
-* [x] SD card slot
-* [x] NVMe SSD
-* [x] Wifi :zap:
-* [x] Bluetooth :zap:
-* [x] USB C ports
-* [x] Airpods Pro (battery level/noise reduction mode switch)
-* [x] CPU power management (tested using Intel Power Gadget)
+- [x] GPU acceleration: built-in `Intel UHD 630`
+- [x] GPU acceleration: `RX 570` (out of the box)
+- [x] Ethernet
+- [x] Audio (Front Panel Headphone)
+- [x] Audio (Rear Panel Headphone)
+- [x] USB A ports
+- [x] SD card slot
+- [x] NVMe SSD
+- [x] Wifi :zap:
+- [x] Bluetooth :zap:
+- [x] USB C ports
+- [x] Airpods Pro (battery level/noise reduction mode switch)
+- [x] CPU power management (tested using Intel Power Gadget)
 
 ## Software
 
-* [x] Installer, App Store, App updates
-* [x] Update MacOS directly from Apple
-* [x] APFS, SSD TRIM
-* [x] iMessage, iCloud, Siri, iTunes, other services
-* [ ] Handoff, Continuity, Universal Clipboard: **built-in `Intel AX200`**
-* [x] Handoff, Continuity, Universal Clipboard: **Broadcom `BCM94360CS2`**
-* [x] Metal, GPU accelerated applications: **built-in `Intel UHD 630`**
-* [x] Metal, GPU accelerated applications: **Sapphire Pulse `RX 570`**
-* [x] Time Machine
-* [x] Sleep mode
-* [x] Shutdown/Sleep/Wake
-* [x] Schedule Start up or Wake
-* [X] Screenshare (VNC)
-* [ ] Wake On Screenshare
+- [x] Installer, App Store, App updates
+- [x] Update MacOS directly from Apple
+- [x] APFS, SSD TRIM
+- [x] iMessage, iCloud, Siri, iTunes, other services
+- [ ] Handoff, Continuity, Universal Clipboard: **built-in `Intel AX200`**
+- [x] Handoff, Continuity, Universal Clipboard: **Broadcom `BCM94360CS2`**
+- [x] Metal, GPU accelerated applications: **built-in `Intel UHD 630`**
+- [x] Metal, GPU accelerated applications: **Sapphire Pulse `RX 570`**
+- [x] Time Machine
+- [x] Sleep mode
+- [x] Shutdown/Sleep/Wake
+- [x] Schedule Start up or Wake
+- [x] Screenshare (VNC)
+- [ ] Wake On Screenshare
 
 ## :wrench: Add Broadcom `BCM94360CS2` wifi card
 
 The idea was to plug the wifi card on a M.2 slot and use built-in wifi card antenna with the new one.
-Hardware problem for the antenna: built-in cables are MMCX male and `BCM94360CS2` are MHF4 female, so the final solution is: `MHF4 female -> SMA female -> SMA male -> MMCX female`. Definitly, `SM male -> MMCX female` converter was the hardest to find.
+Hardware problem for the antenna: built-in cables are MMCX male and `BCM94360CS2` are MHF4 (IPEX-4) female. The easiest way to have it running is to get antennas
 
 ### Hardware needed
 
 - Broadcom `BCM94360CS2` wifi card
 - [`BCM94360CS2` to M.2 Key-M adapter](https://www.amazon.fr/gp/product/B09B249QDL/ref=ppx_yo_dt_b_asin_title_o03_s00)
-- [`MHF4 female -> SMA female` cable](https://www.amazon.fr/Femelle-Bulkhead-Mhf4-Mini-dantenne-Extension/dp/B07GGYJ549/ref=sr_1_11)
-- [`SMA male -> MMCX female` converter, discontinuited](https://www.conrad.fr/p/tru-components-1579582-adaptateur-sma-sma-male-mmcx-femelle-1-pcs-1579582)
+- [Antennas](https://www.amazon.fr/gp/product/B07N2SFZPX/ref=ppx_yo_dt_b_asin_title_o00_s00)
 
 ### Bios setting
 
-To prevent any trouble, you should disable built-in wifi: 
-* Advanced
-  * Onboard Devices > `WLAN: uncheck`
+To prevent any trouble, you should disable built-in wifi:
+
+- Advanced
+  - Onboard Devices > `WLAN: uncheck`
 
 ## :zap: Errors and other
 
-* Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
-* Could not add MX Master using Bluetooth
-* Built-in wifi connect on 5Ghz network but does not uses `ac` protocol:  
+- Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
+- Could not add MX Master using Bluetooth
+- Built-in wifi connect on 5Ghz network but does not uses `ac` protocol:  
   ![Wifi](wifi.png)
-* Speedtest:  
+- Speedtest:  
   ![Speedtest](speedtest.jpg)
 
 ## :zap: MacOS Big Sur 11.3
 
-* No USB after update, to fix it:
-  * Enable `config.plist` > `Kernel` > `Add` > `USBInjectAll` kext
-  * Disable `config.plist` > `Kernel` > `Add` > `USBMap` kext
-  * Disable `config.plist` > `Kernel` > `Quirks` > `XhciPortLimit`
+- No USB after update, to fix it:
+  - Enable `config.plist` > `Kernel` > `Add` > `USBInjectAll` kext
+  - Disable `config.plist` > `Kernel` > `Add` > `USBMap` kext
+  - Disable `config.plist` > `Kernel` > `Quirks` > `XhciPortLimit`
 
 ## Not tested Hardware
-* Audio (Microphone, Toslink)
-* HDMI/DP audio
-* Video encoder/decoder hardware
-* Multiple displays
-* Thunderbolt 3 port
-* Secure Boot (with High Security)
 
-## Not tested  Software
-* FileVault2
-* SIP, Gate Keeper, all OSX security features
+- Audio (Microphone, Toslink)
+- HDMI/DP audio
+- Video encoder/decoder hardware
+- Multiple displays
+- Thunderbolt 3 port
+- Secure Boot (with High Security)
+
+## Not tested Software
+
+- FileVault2
+- SIP, Gate Keeper, all OSX security features
 
 ## OS Version Tested
+
 - `[update]` MacOS Big Sur 11.4 (20F71)
 - `[update]` MacOS Big Sur 11.3 (20E232)
 - `[install]` MacOS Big Sur 11.2.3 (20D91)
 
 ## Tools
+
 - [MountEFI tool](https://github.com/corpnewt/MountEFI)
 - [GenSMBIOS tool](https://github.com/corpnewt/GenSMBIOS)
 - [ProperTree tool](https://github.com/corpnewt/ProperTree)
@@ -128,6 +136,7 @@ To prevent any trouble, you should disable built-in wifi:
 - [gfxutil](https://github.com/acidanthera/gfxutil)
 
 ## Kexts
+
 - [Lilu v1.5.7](https://github.com/acidanthera/Lilu/releases/tag/1.5.7)
 - [VirtualSMC v1.2.7](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.7)
 - [WhateverGreen v1.5.5](https://github.com/acidanthera/WhateverGreen/releases/tag/1.5.5)
@@ -140,10 +149,11 @@ To prevent any trouble, you should disable built-in wifi:
 - NVMe: [NVMeFix v1.0.9](https://github.com/acidanthera/NVMeFix/releases/tag/1.0.9)
 
 ## Resources
+
 - [OpenCore Sanity Checker](https://opencore.slowgeek.com)
 - [Hac Mini Guide](https://osy.gitbook.io/hac-mini-guide/)
 - [PcPerspective - Nuc9 Chipset](https://pcper.com/2020/04/intel-nuc-9-extreme-nuc9i9qnx-review/#ftoc-heading-19)
-- [OpenCore Guide - config.plist](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#starting-point) 
+- [OpenCore Guide - config.plist](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#starting-point)
 - [OpenCore Guide - Generate SMBios](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo)
 - [OpenCore Guide - Choosing the right SMBios](https://dortania.github.io/OpenCore-Install-Guide/extras/smbios-support.html#how-to-decide)
 - [OpenCore Guide - HDD boot](https://dortania.github.io/OpenCore-Post-Install/universal/oc2hdd.html#grabbing-opencore-off-the-usb)
