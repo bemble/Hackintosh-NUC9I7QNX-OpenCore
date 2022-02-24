@@ -7,16 +7,18 @@
 ## System Specification
 
 - Processor: Intel® Core™ i7-9750H Processor (6 cores, 12 MB Cache, 2.6 GHz to 4.50 GHz)
-- Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
+- Network: Built-in Intel `i210` (the bottom one) Built-in Intel `i219-LM` (the top one)
+- Wifi/BT: Broadcom `BCM94360CS2` :wrench: + Built-in Intel `AX200`
+- Audio: Built-in `Realtek ALC256`
 - Graphics: Sapphire Pulse `RX 570` 4GB ITX + Built-in Intel `UHD Graphics 630` 2048 MB
+- Thunderbolt: Built-in Intel `JHL7540`
+- Memory: G.Skill RIPJAWS 2x16 GB 2666 MHz DDR4
 - Main Hard Disk: NVMe Samsung EVO 970 500 GB
 - Secondary Hard Disk: M.2 Sata Sandisk 500GB
-- Wifi/BT: Broadcom `BCM94360CS2` :wrench: + Built-in `Intel AX200`
-- Audio: Built-in `Realtek ALC256`
 
 ## OpenCore
 
-- Version: [0.6.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.8)
+- Version: [0.7.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.8)
 - Generate SMBios using `Macmini8,1` type and add to `config.plist > PlatformInfo > Generic`
 
 ## Bios Settings
@@ -39,11 +41,19 @@
   - boot Priority > `Ethernet1 Boot: Unchecked`
   - boot Priority > `Ethernet2 Boot: Unchecked`
 
+
+## Install
+
+Due to USB error on Big Sur 11.3+ and image of 11.2 hard to find, a clean installation has to be done from Catalina using `EFI_INSTALL`.
+Once installed, upgrade to Big Sur 11.3+ and use `EFI`.
+
+Don't forget to add the serial number etc in both `config.plist` files.
+
 ## Hardware
 
 - [x] GPU acceleration: built-in `Intel UHD 630`
 - [x] GPU acceleration: `RX 570` (out of the box)
-- [x] Ethernet
+- [x] Ethernet :zap:
 - [x] Audio (Front Panel Headphone)
 - [x] Audio (Rear Panel Headphone)
 - [x] USB A ports
@@ -92,12 +102,15 @@ To prevent any trouble, you should disable built-in wifi:
 
 ## :zap: Errors and other
 
-- Could not add MX Keys for Mac keyboard using Bluetooth, nothing happened after adding the code, I had to use Unifying dongle
-- Could not add MX Master using Bluetooth
 - Built-in wifi connect on 5Ghz network but does not uses `ac` protocol:  
   ![Wifi](wifi.png)
 - Speedtest:  
   ![Speedtest](speedtest.jpg)
+
+## :zap: MacOS Monterey 12.2
+
+- `i210` ethernet (the bottom one) does not work, `SmallTree` causes kernel panic on Monterey ([issue here](https://github.com/khronokernel/SmallTree-I211-AT-patch/issues/3))
+- Broadcom `BCM94360CS2` does not work: wifi card is listed in hardware but cannot be enabled
 
 ## :zap: MacOS Big Sur 11.3
 
@@ -122,6 +135,10 @@ To prevent any trouble, you should disable built-in wifi:
 
 ## OS Version Tested
 
+Here is my install/update history, the upper one is the latest:
+
+- `[update]` MacOS Monterey 12.2.1 (21D62)
+- `[install]` MacOS Catalina 10.15.7 (19H15)
 - `[update]` MacOS Big Sur 11.4 (20F71)
 - `[update]` MacOS Big Sur 11.3 (20E232)
 - `[install]` MacOS Big Sur 11.2.3 (20D91)
@@ -137,12 +154,11 @@ To prevent any trouble, you should disable built-in wifi:
 
 ## Kexts
 
-- [Lilu v1.5.7](https://github.com/acidanthera/Lilu/releases/tag/1.5.7)
+- [Lilu v1.6.0](https://github.com/acidanthera/Lilu/releases/tag/1.6.0)
 - [VirtualSMC v1.2.8](https://github.com/acidanthera/VirtualSMC/releases/tag/1.2.8)
-- [WhateverGreen v1.5.6](https://github.com/acidanthera/WhateverGreen/releases/tag/1.5.6)
-- Audio: [AppleALC v1.6.8](https://github.com/acidanthera/AppleALC/releases/tag/1.6.8)
+- [WhateverGreen v1.5.7](https://github.com/acidanthera/WhateverGreen/releases/tag/1.5.7)
+- Audio: [AppleALC v1.6.9](https://github.com/acidanthera/AppleALC/releases/tag/1.6.9)
 - LAN: [IntelMausi v1.0.7](https://github.com/acidanthera/IntelMausi/releases/tag/1.0.7)
-- LAN i211: [SmallTreeIntel82576 v1.3.0](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases/tag/1.3.0)
 - Bluetooth: [IntelBluetoothFirmware v2.1.0](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/v2.1.0)
 - Built-in Wifi: [AirportItlwm v2.1.0](https://github.com/OpenIntelWireless/itlwm/releases/tag/v2.1.0)
 - USB: [USBInjectAll v2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads)
