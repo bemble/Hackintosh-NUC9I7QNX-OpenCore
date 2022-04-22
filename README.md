@@ -1,4 +1,11 @@
+> ⚠️ This repository is not maintained anymore, I don't own a `NUC9I7QNX` anymore.
+
 # Hackintosh NUC9I7QNX OpenCore
+
+[![tippin_svg]][tippin_url]
+
+[tippin_svg]: https://img.shields.io/badge/donate-BuyMeACoffee-ffdd00?logo=buymeacoffee&style=flat
+[tippin_url]: https://www.buymeacoffee.com/bemble
 
 > I love Mac OS and I use it for years. I could buy a Mac Mini M1, but I wont buy an unrepairable and unupgradable desktop computer. I expect durable computers, as much as I can.
 
@@ -137,6 +144,7 @@ To prevent any trouble, you should disable built-in wifi:
 
 Here is my install/update history, the upper one is the latest:
 
+- `[update]` MacOS Monterey 12.3.1 (21E258)
 - `[update]` MacOS Monterey 12.2.1 (21D62)
 - `[install]` MacOS Catalina 10.15.7 (19H15)
 - `[update]` MacOS Big Sur 11.4 (20F71)
